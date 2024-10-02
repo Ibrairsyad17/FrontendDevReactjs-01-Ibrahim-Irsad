@@ -1,0 +1,188 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Very Long Name Restaurant Number 1 in List",
+      "rating": 4.5,
+      "categories": ["Thai", "Fusion"],
+      "price": "$$$",
+      "open": true,
+      "photos": ["photo_url_1_1", "photo_url_1_2"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "text": "Amazing food!"
+        },
+        {
+          "id": 2,
+          "name": "Jane Roe",
+          "rating": 4,
+          "text": "Great ambiance but a bit pricey."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Restaurant 2",
+      "rating": 3.0,
+      "categories": ["Seafood"],
+      "price": "$$",
+      "open": false,
+      "photos": ["photo_url_2_1", "photo_url_2_2"],
+      "reviews": [
+        {
+          "id": 3,
+          "name": "Jane Doe",
+          "rating": 4,
+          "text": "Good but pricey."
+        },
+        {
+          "id": 4,
+          "name": "Sam Smith",
+          "rating": 2.5,
+          "text": "Not fresh enough."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Gourmet Delight",
+      "rating": 4.8,
+      "categories": ["French", "Fine Dining"],
+      "price": "$$$$",
+      "open": true,
+      "photos": ["photo_url_3_1", "photo_url_3_2", "photo_url_3_3"],
+      "reviews": [
+        {
+          "id": 5,
+          "name": "Alice Smith",
+          "rating": 5,
+          "text": "Exquisite experience!"
+        },
+        {
+          "id": 6,
+          "name": "Bob Brown",
+          "rating": 4.5,
+          "text": "Fantastic food, great service."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Quick Bites",
+      "rating": 3.8,
+      "categories": ["Fast Food"],
+      "price": "$",
+      "open": true,
+      "photos": ["photo_url_4_1", "photo_url_4_2", "photo_url_4_3"],
+      "reviews": [
+        {
+          "id": 7,
+          "name": "Charlie Davis",
+          "rating": 4,
+          "text": "Good for a quick meal."
+        },
+        {
+          "id": 8,
+          "name": "Dana Evans",
+          "rating": 3.5,
+          "text": "Average fast food."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Veggie Paradise",
+      "rating": 4.2,
+      "categories": ["Vegetarian", "Healthy"],
+      "price": "$$",
+      "open": false,
+      "photos": ["photo_url_5_1", "photo_url_5_2"],
+      "reviews": [
+        {
+          "id": 9,
+          "name": "Eve Foster",
+          "rating": 4.5,
+          "text": "Great vegetarian options!"
+        },
+        {
+          "id": 10,
+          "name": "Frank Green",
+          "rating": 4,
+          "text": "Healthy and tasty."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sushi World",
+      "rating": 4.7,
+      "categories": ["Japanese", "Sushi"],
+      "price": "$$$",
+      "open": true,
+      "photos": ["photo_url_6_1", "photo_url_6_2", "photo_url_6_3"],
+      "reviews": [
+        {
+          "id": 11,
+          "name": "George Hill",
+          "rating": 5,
+          "text": "Best sushi in town!"
+        },
+        {
+          "id": 12,
+          "name": "Hannah Lee",
+          "rating": 4.5,
+          "text": "Fresh and delicious."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Pasta Palace",
+      "rating": 4.3,
+      "categories": ["Italian", "Pasta"],
+      "price": "$$",
+      "open": true,
+      "photos": ["photo_url_7_1", "photo_url_7_2"],
+      "reviews": [
+        {
+          "id": 13,
+          "name": "Ivy King",
+          "rating": 4,
+          "text": "Great pasta dishes."
+        },
+        {
+          "id": 14,
+          "name": "Jack White",
+          "rating": 4.5,
+          "text": "Authentic Italian flavors."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Burger Haven",
+      "rating": 3.9,
+      "categories": ["American", "Burgers"],
+      "price": "$",
+      "open": false,
+      "photos": ["photo_url_8_1", "photo_url_8_2", "photo_url_8_3"],
+      "reviews": [
+        {
+          "id": 15,
+          "name": "Karen Black",
+          "rating": 4,
+          "text": "Juicy burgers!"
+        },
+        {
+          "id": 16,
+          "name": "Larry Brown",
+          "rating": 3.5,
+          "text": "Good but a bit greasy."
+        }
+      ]
+    }
+  ]
+}
