@@ -10,17 +10,17 @@ import {
 
 const FilterTools = () => {
   return (
-    <div className="border-y py-4 flex justify-between items-center">
-      <div className="flex gap-x-5 items-center">
+    <div className="border-y py-4 flex flex-col gap-4 lg:flex-row justify-between lg:items-center">
+      <div className="flex flex-wrap flex-col lg:flex-row gap-5 lg:items-center">
         <span className="text-sm text-gray-500">Filter By:</span>
-        <div className="flex items-center space-x-2 border-b py-2.5">
+        <div className="flex items-center space-x-2 lg:border-b py-2.5">
           <Checkbox id="open-now" className="rounded-full" />
           <label htmlFor="open-now" className="text-sm">
             Open Now
           </label>
         </div>
         <Select>
-          <SelectTrigger className="w-[120px] ">
+          <SelectTrigger className="lg:w-[120px] w-full">
             <SelectValue placeholder="Price" />
           </SelectTrigger>
           <SelectContent>
@@ -29,7 +29,7 @@ const FilterTools = () => {
           </SelectContent>
         </Select>
         <Select>
-          <SelectTrigger className="w-[120px] ">
+          <SelectTrigger className="lg:w-[120px] w-full">
             <SelectValue placeholder="Categories" />
           </SelectTrigger>
           <SelectContent>

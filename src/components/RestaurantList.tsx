@@ -9,11 +9,11 @@ const RestaurantList = () => {
     <div className="flex flex-col gap-8">
       <h1 className="text-3xl">All Restaurants</h1>
       {error && <div className="text-red-500">{error}</div>}
-      <ul className="grid grid-cols-4 gap-6">
+      <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
         {restaurants.map((restaurant) => (
           <li key={restaurant.id} className="gap-5 flex flex-col">
-            <div className="flex flex-col gap-3">
-              <div className="overflow-hidden h-48 w-full">
+            <div className="flex flex-col gap-2">
+              <div className="overflow-hidden h-48 w-full mb-4">
                 <img
                   src={
                     restaurant.photos.length > 0
@@ -37,15 +37,15 @@ const RestaurantList = () => {
                   />
                 ))}
               </div>
-              <div className="flex justify-between items-center">
-                <div className="flex gap-2 items-center uppercase">
+              <div className="flex justify-between items-center mt-2">
+                <div className="flex gap-2 items-center uppercase text-xs">
                   <span className="text-gray-900">{restaurant.category}</span>
                   <span className="text-gray-500">•</span>
                   <span className="text-gray-500">{restaurant.price}</span>
                 </div>
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-2 items-center text-xs">
                   {restaurant.open ? (
-                    <div className="h-4 w-4 bg-green-500 rounded-full">
+                    <div className="h-4 w-4 bg-teal-300 rounded-full">
                       <span className="sr-only">Open</span>
                     </div>
                   ) : (
@@ -60,7 +60,7 @@ const RestaurantList = () => {
               </div>
             </div>
 
-            <Button className="rounded-none bg-blue-900 hover:bg-blue-800 uppercase tracking-widest py-6 font-light">
+            <Button className="rounded-none bg-blue-900 hover:bg-blue-800 uppercase tracking-widest py-4 font-light">
               Learn More
             </Button>
           </li>
