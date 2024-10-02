@@ -13,7 +13,7 @@ interface Restaurant {
   id: number;
   name: string;
   rating: number;
-  categories: string[];
+  category: string;
   price: string;
   open: boolean;
   photos: string[];
