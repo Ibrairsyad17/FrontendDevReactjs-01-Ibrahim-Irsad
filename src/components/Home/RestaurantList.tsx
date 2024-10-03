@@ -45,9 +45,9 @@ const RestaurantList = () => {
       )}
       <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
         {sortedRestaurants?.length === 0 && (
-          <div className="text-center col-span-4 text-gray-500">
+          <li className="text-center col-span-4 text-gray-500">
             No restaurants found
-          </div>
+          </li>
         )}
         {sortedRestaurants?.map((restaurant) => (
           <li key={restaurant.id} className="gap-5 flex flex-col">

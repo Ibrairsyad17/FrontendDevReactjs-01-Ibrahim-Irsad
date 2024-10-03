@@ -1,18 +1,20 @@
 import { Category, Restaurant } from "@/types/interfaces";
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi } from "@reduxjs/toolkit/query/react";
+import httpClient from "./http-client";
 
 export const clientApi = createApi({
   reducerPath: "clientApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5174" }),
+  baseQuery: httpClient({ baseUrl: "http://localhost:5174" }),
   endpoints: (builder) => ({
-    getRestaurants: builder.query<Restaurant[], { category?: string }>({
+    getCategories: builder.query<Category[], void>({
+      query: () => ({ url: "/categories", method: "get" }),
+    }),
+    getRestaurants: builder.query<Restaurant[], { category: string }>({
       query: ({ category }) => ({
         url: "/restaurants",
+        method: "get",
         params: { category },
       }),
-    }),
-    getCategories: builder.query<Category[], void>({
-      query: () => "/categories",
     }),
   }),
 });
