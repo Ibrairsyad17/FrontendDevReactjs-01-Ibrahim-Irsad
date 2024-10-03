@@ -1,27 +1,6 @@
-import httpClient from "@/services/http-client";
 import { Category } from "@/types/interfaces";
-import { CanceledError } from "axios";
-import { useEffect, useState } from "react";
+import useData from "./useData";
 
-const useCategories = () => {
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    httpClient
-      .get<Category[]>("/categories", { signal: controller.signal })
-      .then((response) => setCategories(response.data))
-      .catch((error) => {
-        if (error instanceof CanceledError) return;
-        setError(error.message);
-      });
-
-    return () => controller.abort();
-  }, []);
-
-  return { categories, error };
-};
+const useCategories = () => useData<Category[]>("/categories");
 
 export default useCategories;

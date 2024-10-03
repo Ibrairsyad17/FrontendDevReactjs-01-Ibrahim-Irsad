@@ -1,3 +1,4 @@
+import useCategories from "@/hooks/useCategories";
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import {
@@ -9,6 +10,8 @@ import {
 } from "../ui/select";
 
 const FilterTools = () => {
+  const { data, error, loading } = useCategories();
+
   return (
     <div className="border-y py-4 flex flex-col gap-4 lg:flex-row justify-between lg:items-center">
       <div className="flex flex-wrap flex-col lg:flex-row gap-5 lg:items-center">
@@ -33,9 +36,13 @@ const FilterTools = () => {
             <SelectValue placeholder="Categories" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="italian">Italian</SelectItem>
-            <SelectItem value="chinese">Chinese</SelectItem>
-            <SelectItem value="mexican">Mexican</SelectItem>
+            {error && <div className="text-red-500">{error}</div>}
+            {loading && <div className="text-gray-500">Loading...</div>}
+            {data?.map((category) => (
+              <SelectItem key={category.id} value={category.id.toString()}>
+                {category.name}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>

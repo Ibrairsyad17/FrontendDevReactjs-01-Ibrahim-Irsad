@@ -49,7 +49,7 @@ const RestaurantList = () => {
                 <div className="flex gap-2 items-center uppercase text-xs">
                   <span className="text-gray-900">{restaurant.category}</span>
                   <span className="text-gray-500">•</span>
-                  <span className="text-gray-500">{restaurant.price}</span>
+                  <span className="text-gray-500">${restaurant.price}</span>
                 </div>
                 <div className="flex gap-2 items-center text-xs">
                   {restaurant.open ? (
