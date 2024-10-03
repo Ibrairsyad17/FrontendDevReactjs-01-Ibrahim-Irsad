@@ -16,7 +16,14 @@ export const clientApi = createApi({
         params: { category },
       }),
     }),
+    getRestaurantById: builder.query<Restaurant, string>({
+      query: (id) => ({ url: `/restaurants/${id}`, method: "get" }),
+    }),
   }),
 });
 
-export const { useGetRestaurantsQuery, useGetCategoriesQuery } = clientApi;
+export const {
+  useGetRestaurantsQuery,
+  useGetCategoriesQuery,
+  useGetRestaurantByIdQuery,
+} = clientApi;
