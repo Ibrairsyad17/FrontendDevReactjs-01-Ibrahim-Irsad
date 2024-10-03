@@ -10,6 +10,7 @@ import {
 import { useGetCategoriesQuery } from "@/services/client-api";
 import { useState } from "react";
 import PriceRangeSlider from "./PriceRangeSlider";
+import { ChevronDown } from "lucide-react";
 
 const FilterTools = () => {
   const { data, error, isLoading } = useGetCategoriesQuery();
@@ -40,10 +41,10 @@ const FilterTools = () => {
         </div>
         <div className="relative">
           <button
-            className="lg:w-[120px] w-full border-b rounded px-4 py-2.5 text-sm"
+            className="lg:w-[120px] w-full border-b rounded px-4 py-2.5 text-sm flex items-center justify-between"
             onClick={() => setIsPriceDropdownOpen(!isPriceDropdownOpen)}
           >
-            Price
+            <span>Price</span> <ChevronDown className="h-3 w-3 inline" />
           </button>
           {isPriceDropdownOpen && (
             <div className="absolute z-10 bg-white border rounded mt-2 p-4">
