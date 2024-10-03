@@ -1,6 +1,5 @@
 import useFilters from "@/hooks/useFilters";
 import { Button } from "../ui/button";
-import { Checkbox } from "../ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -19,13 +18,13 @@ const FilterTools = () => {
       <div className="flex flex-wrap flex-col lg:flex-row gap-5 lg:items-center">
         <span className="text-sm text-gray-500">Filter By:</span>
         <div className="flex items-center space-x-2 lg:border-b py-2.5">
-          <Checkbox
+          <input
+            type="checkbox"
+            name="open-now"
             id="open-now"
             checked={filters.open}
-            onChange={(e) =>
-              updateFilter("open", (e.target as HTMLInputElement).checked)
-            }
-            className="rounded-full"
+            onChange={(e) => updateFilter("open", e.target.checked)}
+            className="h-4 w-4 border border-gray-300 rounded-full checked:bg-blue-900 checked:border-transparent focus:outline-none"
           />
           <label htmlFor="open-now" className="text-sm">
             Open Now
@@ -56,7 +55,7 @@ const FilterTools = () => {
             )}
             {isLoading && <div className="text-gray-500">Loading...</div>}
             {data?.map((category) => (
-              <SelectItem key={category.id} value={category.id.toString()}>
+              <SelectItem key={category.id} value={category.name}>
                 {category.name}
               </SelectItem>
             ))}

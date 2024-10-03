@@ -12,6 +12,8 @@ const RestaurantList = () => {
     isLoading,
   } = useGetRestaurantsQuery({ category: filters.category });
 
+  console.log(filters.category);
+
   return (
     <div className="flex flex-col gap-8">
       <h1 className="text-3xl">All Restaurants</h1>
