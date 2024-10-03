@@ -12,7 +12,29 @@ const RestaurantList = () => {
     isLoading,
   } = useGetRestaurantsQuery({ category: filters.category });
 
-  console.log(filters.category);
+  const filteredRestaurants = restaurants?.filter((restaurant) => {
+    const { open, category } = filters;
+    let matches = true;
+
+    if (open) {
+      matches = matches && restaurant.open;
+    }
+
+    if (category) {
+      matches = matches && restaurant.category === category;
+    }
+
+    return matches;
+  });
+
+  const sortedRestaurants = filteredRestaurants?.sort((a, b) => {
+    if (filters.price === "asc") {
+      return Number(a.price) - Number(b.price);
+    } else if (filters.price === "desc") {
+      return Number(b.price) - Number(a.price);
+    }
+    return 0;
+  });
 
   return (
     <div className="flex flex-col gap-8">
@@ -22,12 +44,12 @@ const RestaurantList = () => {
         <div className="text-center col-span-4 text-gray-500">Loading...</div>
       )}
       <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
-        {restaurants?.length === 0 && (
+        {sortedRestaurants?.length === 0 && (
           <div className="text-center col-span-4 text-gray-500">
             No restaurants found
           </div>
         )}
-        {restaurants?.map((restaurant) => (
+        {sortedRestaurants?.map((restaurant) => (
           <li key={restaurant.id} className="gap-5 flex flex-col">
             <div className="flex flex-col gap-2">
               <div className="overflow-hidden h-48 w-full mb-4">

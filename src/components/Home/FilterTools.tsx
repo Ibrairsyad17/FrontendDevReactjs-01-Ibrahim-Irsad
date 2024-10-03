@@ -38,8 +38,8 @@ const FilterTools = () => {
             <SelectValue placeholder="Price" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="low">Termurah</SelectItem>
-            <SelectItem value="medium">Termahal</SelectItem>
+            <SelectItem value="asc">Termurah</SelectItem>
+            <SelectItem value="desc">Termahal</SelectItem>
           </SelectContent>
         </Select>
         <Select
