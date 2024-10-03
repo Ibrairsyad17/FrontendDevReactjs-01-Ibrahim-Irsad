@@ -1,16 +1,24 @@
 import useRestaurants from "@/hooks/useRestaurants";
 import { StarIcon } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const RestaurantList = () => {
-  const { restaurants, error } = useRestaurants();
+  const { data: restaurants, error, loading } = useRestaurants();
 
   return (
     <div className="flex flex-col gap-8">
       <h1 className="text-3xl">All Restaurants</h1>
       {error && <div className="text-red-500">{error}</div>}
+      {loading && (
+        <div className="text-center col-span-4 text-gray-500">Loading...</div>
+      )}
       <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
-        {restaurants.map((restaurant) => (
+        {restaurants?.length === 0 && (
+          <div className="text-center col-span-4 text-gray-500">
+            No restaurants found
+          </div>
+        )}
+        {restaurants?.map((restaurant) => (
           <li key={restaurant.id} className="gap-5 flex flex-col">
             <div className="flex flex-col gap-2">
               <div className="overflow-hidden h-48 w-full mb-4">

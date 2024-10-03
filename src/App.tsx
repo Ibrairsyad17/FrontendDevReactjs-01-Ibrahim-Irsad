@@ -1,7 +1,7 @@
 import "./index.css";
 import FilterTools from "./components/Home/FilterTools";
 import Header from "./components/Home/Header";
-import RestaurantList from "./components/RestaurantList";
+import RestaurantList from "./components/Home/RestaurantList";
 
 function App() {
   return (

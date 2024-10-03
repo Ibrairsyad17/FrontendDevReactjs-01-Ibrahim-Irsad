@@ -5,7 +5,7 @@
       "name": "Burger Joint",
       "rating": 4.5,
       "category": "Thai",
-      "price": "$",
+      "price": 50,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=1",
@@ -32,7 +32,7 @@
       "name": "Sushi Place",
       "rating": 4.7,
       "category": "Japanese",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=4",
@@ -58,7 +58,7 @@
       "name": "Pasta Paradise",
       "rating": 4.3,
       "category": "Italian",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=6",
@@ -84,7 +84,7 @@
       "name": "Burger Barn",
       "rating": 4.0,
       "category": "American",
-      "price": "$",
+      "price": 50,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=8",
@@ -110,7 +110,7 @@
       "name": "Taco Town",
       "rating": 4.6,
       "category": "Mexican",
-      "price": "$",
+      "price": 50,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=10",
@@ -136,7 +136,7 @@
       "name": "Curry Corner",
       "rating": 4.4,
       "category": "Indian",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=12",
@@ -162,7 +162,7 @@
       "name": "Pizza Palace",
       "rating": 4.2,
       "category": "Italian",
-      "price": "$",
+      "price": 50,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=14",
@@ -188,7 +188,7 @@
       "name": "BBQ Joint",
       "rating": 4.5,
       "category": "American",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=16",
@@ -214,7 +214,7 @@
       "name": "Vegan Delight",
       "rating": 4.8,
       "category": "Vegan",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=18",
@@ -240,7 +240,7 @@
       "name": "Seafood Shack",
       "rating": 4.3,
       "category": "Seafood",
-      "price": "$$$",
+      "price": 30,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=20",
@@ -266,7 +266,7 @@
       "name": "Steak House",
       "rating": 4.7,
       "category": "Steakhouse",
-      "price": "$$$",
+      "price": 30,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=22",
@@ -292,7 +292,7 @@
       "name": "Dim Sum House",
       "rating": 4.4,
       "category": "Chinese",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=24",
@@ -318,7 +318,7 @@
       "name": "French Bistro",
       "rating": 4.6,
       "category": "French",
-      "price": "$$$",
+      "price": 30,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=26",
@@ -344,7 +344,7 @@
       "name": "Greek Taverna",
       "rating": 4.5,
       "category": "Greek",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=28",
@@ -370,7 +370,7 @@
       "name": "Tapas Bar",
       "rating": 4.3,
       "category": "Spanish",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=30",
@@ -396,7 +396,7 @@
       "name": "Korean BBQ",
       "rating": 4.7,
       "category": "Korean",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=32",
@@ -422,7 +422,7 @@
       "name": "Mediterranean Grill",
       "rating": 4.5,
       "category": "Mediterranean",
-      "price": "$$",
+      "price": 60,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=34",
@@ -448,7 +448,7 @@
       "name": "Thai Delight",
       "rating": 4.4,
       "category": "Thai",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=36",
@@ -474,7 +474,7 @@
       "name": "Indian Spice",
       "rating": 4.6,
       "category": "Indian",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=38",
@@ -500,7 +500,7 @@
       "name": "Mexican Fiesta",
       "rating": 4.3,
       "category": "Mexican",
-      "price": "$",
+      "price": 50,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=40",
@@ -526,7 +526,7 @@
       "name": "Italian Bistro",
       "rating": 4.5,
       "category": "Italian",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=42",
@@ -552,7 +552,7 @@
       "name": "Chinese Garden",
       "rating": 4.4,
       "category": "Chinese",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=44",
@@ -578,7 +578,7 @@
       "name": "French Cafe",
       "rating": 4.6,
       "category": "French",
-      "price": "$$$",
+      "price": 30,
       "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=46",
@@ -604,7 +604,7 @@
       "name": "Greek Island",
       "rating": 4.5,
       "category": "Greek",
-      "price": "$$",
+      "price": 60,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=48",
@@ -624,6 +624,68 @@
           "text": "Great service."
         }
       ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thai"
+    },
+    {
+      "id": 2,
+      "name": "Japanese"
+    },
+    {
+      "id": 3,
+      "name": "Italian"
+    },
+    {
+      "id": 4,
+      "name": "American"
+    },
+    {
+      "id": 5,
+      "name": "Mexican"
+    },
+    {
+      "id": 6,
+      "name": "Indian"
+    },
+    {
+      "id": 7,
+      "name": "Vegan"
+    },
+    {
+      "id": 8,
+      "name": "Seafood"
+    },
+    {
+      "id": 9,
+      "name": "Steakhouse"
+    },
+    {
+      "id": 10,
+      "name": "Chinese"
+    },
+    {
+      "id": 11,
+      "name": "French"
+    },
+    {
+      "id": 12,
+      "name": "Greek"
+    },
+    {
+      "id": 13,
+      "name": "Spanish"
+    },
+    {
+      "id": 14,
+      "name": "Korean"
+    },
+    {
+      "id": 15,
+      "name": "Mediterranean"
     }
   ]
 }
