@@ -1,15 +1,22 @@
-import useRestaurants from "@/hooks/useRestaurants";
 import { StarIcon } from "lucide-react";
 import { Button } from "../ui/button";
+import { useGetRestaurantsQuery } from "@/services/client-api";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const RestaurantList = () => {
-  const { data: restaurants, error, loading } = useRestaurants();
+  const filters = useSelector((state: RootState) => state.restaurants.filters);
+  const {
+    data: restaurants,
+    error,
+    isLoading,
+  } = useGetRestaurantsQuery({ category: filters.category });
 
   return (
     <div className="flex flex-col gap-8">
       <h1 className="text-3xl">All Restaurants</h1>
-      {error && <div className="text-red-500">{error}</div>}
-      {loading && (
+      {error && <div className="text-red-500">{JSON.stringify(error)}</div>}
+      {isLoading && (
         <div className="text-center col-span-4 text-gray-500">Loading...</div>
       )}
       <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
