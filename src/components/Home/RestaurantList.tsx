@@ -45,7 +45,7 @@ const RestaurantList = () => {
       {isLoading && (
         <div className="text-center col-span-4 text-gray-500">Loading...</div>
       )}
-      <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
         {filteredRestaurants?.length === 0 && (
           <li className="text-center col-span-4 text-gray-500">
             No restaurants found

@@ -17,13 +17,23 @@
           "id": 15,
           "name": "Karen Black",
           "rating": 4,
-          "text": "Juicy burgers!"
+          "text": "Juicy burgers!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 16,
           "name": "Larry Brown",
           "rating": 3.5,
-          "text": "Good but a bit greasy."
+          "text": "Good but a bit greasy.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
@@ -33,7 +43,7 @@
       "rating": 4.7,
       "category": "Japanese",
       "price": 60,
-      "open": true,
+      "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=4",
         "https://picsum.photos/1000/1100?random=5"
@@ -43,13 +53,23 @@
           "id": 17,
           "name": "Alice Green",
           "rating": 5,
-          "text": "Best sushi in town!"
+          "text": "Best sushi in town!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 18,
           "name": "Bob White",
           "rating": 4.5,
-          "text": "Fresh and delicious."
+          "text": "Fresh and delicious.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
@@ -69,13 +89,23 @@
           "id": 19,
           "name": "Charlie Blue",
           "rating": 4,
-          "text": "Great pasta dishes!"
+          "text": "Great pasta dishes!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 20,
           "name": "Diana Red",
           "rating": 4.2,
-          "text": "Lovely ambiance."
+          "text": "Lovely ambiance.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
@@ -95,13 +125,23 @@
           "id": 21,
           "name": "Eve Yellow",
           "rating": 3.8,
-          "text": "Tasty burgers!"
+          "text": "Tasty burgers!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 22,
           "name": "Frank Black",
           "rating": 4.1,
-          "text": "Good value for money."
+          "text": "Good value for money.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
@@ -110,7 +150,7 @@
       "name": "Taco Town",
       "rating": 4.6,
       "category": "Mexican",
-      "price": 50,
+      "price": 40,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=10",
@@ -119,24 +159,34 @@
       "reviews": [
         {
           "id": 23,
-          "name": "Grace White",
-          "rating": 4.7,
-          "text": "Amazing tacos!"
+          "name": "George Green",
+          "rating": 4.5,
+          "text": "Amazing tacos!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 24,
-          "name": "Hank Green",
-          "rating": 4.5,
-          "text": "Authentic flavors."
+          "name": "Hannah White",
+          "rating": 4.7,
+          "text": "Best Mexican food in town.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 6,
-      "name": "Curry Corner",
-      "rating": 4.4,
+      "name": "Curry House",
+      "rating": 4.8,
       "category": "Indian",
-      "price": 60,
+      "price": 55,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=12",
@@ -146,24 +196,34 @@
         {
           "id": 25,
           "name": "Ivy Blue",
-          "rating": 4.3,
-          "text": "Rich and flavorful curries."
+          "rating": 4.9,
+          "text": "Delicious curries!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 26,
-          "name": "Jack Red",
-          "rating": 4.5,
-          "text": "Great naan bread."
+          "name": "Jack Black",
+          "rating": 4.8,
+          "text": "Authentic Indian flavors.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 7,
-      "name": "Pizza Palace",
-      "rating": 4.2,
-      "category": "Italian",
-      "price": 50,
-      "open": false,
+      "name": "Vegan Delight",
+      "rating": 4.4,
+      "category": "Vegan",
+      "price": 45,
+      "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=14",
         "https://picsum.photos/1000/1100?random=15"
@@ -171,24 +231,34 @@
       "reviews": [
         {
           "id": 27,
-          "name": "Karen Yellow",
-          "rating": 4.0,
-          "text": "Delicious pizza!"
+          "name": "Karen White",
+          "rating": 4.3,
+          "text": "Great vegan options!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 28,
-          "name": "Larry Black",
-          "rating": 4.1,
-          "text": "Nice crust and toppings."
+          "name": "Larry Green",
+          "rating": 4.5,
+          "text": "Healthy and tasty.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 8,
-      "name": "BBQ Joint",
-      "rating": 4.5,
-      "category": "American",
-      "price": 60,
+      "name": "Seafood Shack",
+      "rating": 4.7,
+      "category": "Seafood",
+      "price": 70,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=16",
@@ -197,25 +267,35 @@
       "reviews": [
         {
           "id": 29,
-          "name": "Mona White",
-          "rating": 4.6,
-          "text": "Best BBQ in town!"
+          "name": "Megan Blue",
+          "rating": 4.8,
+          "text": "Fresh seafood!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 30,
-          "name": "Nate Green",
-          "rating": 4.4,
-          "text": "Tender and juicy."
+          "name": "Nathan Black",
+          "rating": 4.7,
+          "text": "Great variety of dishes.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 9,
-      "name": "Vegan Delight",
-      "rating": 4.8,
-      "category": "Vegan",
-      "price": 60,
-      "open": true,
+      "name": "Steakhouse Supreme",
+      "rating": 4.9,
+      "category": "Steakhouse",
+      "price": 80,
+      "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=18",
         "https://picsum.photos/1000/1100?random=19"
@@ -223,25 +303,35 @@
       "reviews": [
         {
           "id": 31,
-          "name": "Olive Blue",
-          "rating": 4.9,
-          "text": "Healthy and tasty!"
+          "name": "Olivia White",
+          "rating": 5,
+          "text": "Best steaks ever!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 32,
-          "name": "Paul Red",
-          "rating": 4.7,
-          "text": "Great vegan options."
+          "name": "Paul Green",
+          "rating": 4.9,
+          "text": "Perfectly cooked steaks.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 10,
-      "name": "Seafood Shack",
-      "rating": 4.3,
-      "category": "Seafood",
-      "price": 30,
-      "open": false,
+      "name": "Dim Sum Delight",
+      "rating": 4.5,
+      "category": "Chinese",
+      "price": 50,
+      "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=20",
         "https://picsum.photos/1000/1100?random=21"
@@ -249,24 +339,34 @@
       "reviews": [
         {
           "id": 33,
-          "name": "Quinn Yellow",
-          "rating": 4.2,
-          "text": "Fresh seafood!"
+          "name": "Quincy Blue",
+          "rating": 4.6,
+          "text": "Delicious dim sum!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 34,
-          "name": "Rita Black",
+          "name": "Rachel Black",
           "rating": 4.4,
-          "text": "Great variety."
+          "text": "Great variety of dishes.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 11,
-      "name": "Steak House",
-      "rating": 4.7,
-      "category": "Steakhouse",
-      "price": 30,
+      "name": "French Bistro",
+      "rating": 4.8,
+      "category": "French",
+      "price": 75,
       "open": true,
       "photos": [
         "https://picsum.photos/1000/1100?random=22",
@@ -275,25 +375,35 @@
       "reviews": [
         {
           "id": 35,
-          "name": "Sam White",
-          "rating": 4.8,
-          "text": "Best steaks!"
+          "name": "Sam Green",
+          "rating": 4.9,
+          "text": "Authentic French cuisine!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 36,
-          "name": "Tina Green",
-          "rating": 4.6,
-          "text": "Cooked to perfection."
+          "name": "Tina White",
+          "rating": 4.8,
+          "text": "Lovely ambiance and food.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     },
     {
       "id": 12,
-      "name": "Dim Sum House",
-      "rating": 4.4,
-      "category": "Chinese",
-      "price": 60,
-      "open": true,
+      "name": "Greek Taverna",
+      "rating": 4.6,
+      "category": "Greek",
+      "price": 55,
+      "open": false,
       "photos": [
         "https://picsum.photos/1000/1100?random=24",
         "https://picsum.photos/1000/1100?random=25"
@@ -302,326 +412,24 @@
         {
           "id": 37,
           "name": "Uma Blue",
-          "rating": 4.5,
-          "text": "Delicious dim sum."
+          "rating": 4.7,
+          "text": "Delicious Greek dishes!",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         },
         {
           "id": 38,
-          "name": "Vince Red",
-          "rating": 4.3,
-          "text": "Great variety."
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "French Bistro",
-      "rating": 4.6,
-      "category": "French",
-      "price": 30,
-      "open": false,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=26",
-        "https://picsum.photos/1000/1100?random=27"
-      ],
-      "reviews": [
-        {
-          "id": 39,
-          "name": "Wendy Yellow",
-          "rating": 4.7,
-          "text": "Authentic French cuisine."
-        },
-        {
-          "id": 40,
-          "name": "Xander Black",
-          "rating": 4.5,
-          "text": "Lovely atmosphere."
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Greek Taverna",
-      "rating": 4.5,
-      "category": "Greek",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=28",
-        "https://picsum.photos/1000/1100?random=29"
-      ],
-      "reviews": [
-        {
-          "id": 41,
-          "name": "Yara White",
+          "name": "Victor Black",
           "rating": 4.6,
-          "text": "Delicious Greek food."
-        },
-        {
-          "id": 42,
-          "name": "Zane Green",
-          "rating": 4.4,
-          "text": "Great service."
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Tapas Bar",
-      "rating": 4.3,
-      "category": "Spanish",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=30",
-        "https://picsum.photos/1000/1100?random=31"
-      ],
-      "reviews": [
-        {
-          "id": 43,
-          "name": "Alice Blue",
-          "rating": 4.2,
-          "text": "Tasty tapas."
-        },
-        {
-          "id": 44,
-          "name": "Bob Red",
-          "rating": 4.4,
-          "text": "Great variety."
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Korean BBQ",
-      "rating": 4.7,
-      "category": "Korean",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=32",
-        "https://picsum.photos/1000/1100?random=33"
-      ],
-      "reviews": [
-        {
-          "id": 45,
-          "name": "Charlie Yellow",
-          "rating": 4.8,
-          "text": "Amazing BBQ!"
-        },
-        {
-          "id": 46,
-          "name": "Diana Black",
-          "rating": 4.6,
-          "text": "Great experience."
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Mediterranean Grill",
-      "rating": 4.5,
-      "category": "Mediterranean",
-      "price": 60,
-      "open": false,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=34",
-        "https://picsum.photos/1000/1100?random=35"
-      ],
-      "reviews": [
-        {
-          "id": 47,
-          "name": "Eve White",
-          "rating": 4.6,
-          "text": "Delicious and healthy."
-        },
-        {
-          "id": 48,
-          "name": "Frank Green",
-          "rating": 4.4,
-          "text": "Great flavors."
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Thai Delight",
-      "rating": 4.4,
-      "category": "Thai",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=36",
-        "https://picsum.photos/1000/1100?random=37"
-      ],
-      "reviews": [
-        {
-          "id": 49,
-          "name": "Grace Blue",
-          "rating": 4.5,
-          "text": "Authentic Thai food."
-        },
-        {
-          "id": 50,
-          "name": "Hank Red",
-          "rating": 4.3,
-          "text": "Great service."
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Indian Spice",
-      "rating": 4.6,
-      "category": "Indian",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=38",
-        "https://picsum.photos/1000/1100?random=39"
-      ],
-      "reviews": [
-        {
-          "id": 51,
-          "name": "Ivy Yellow",
-          "rating": 4.7,
-          "text": "Rich and flavorful."
-        },
-        {
-          "id": 52,
-          "name": "Jack Black",
-          "rating": 4.5,
-          "text": "Great variety."
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Mexican Fiesta",
-      "rating": 4.3,
-      "category": "Mexican",
-      "price": 50,
-      "open": false,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=40",
-        "https://picsum.photos/1000/1100?random=41"
-      ],
-      "reviews": [
-        {
-          "id": 53,
-          "name": "Karen White",
-          "rating": 4.2,
-          "text": "Tasty and authentic."
-        },
-        {
-          "id": 54,
-          "name": "Larry Green",
-          "rating": 4.4,
-          "text": "Great atmosphere."
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Italian Bistro",
-      "rating": 4.5,
-      "category": "Italian",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=42",
-        "https://picsum.photos/1000/1100?random=43"
-      ],
-      "reviews": [
-        {
-          "id": 55,
-          "name": "Mona Blue",
-          "rating": 4.6,
-          "text": "Delicious pasta."
-        },
-        {
-          "id": 56,
-          "name": "Nate Red",
-          "rating": 4.4,
-          "text": "Great service."
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Chinese Garden",
-      "rating": 4.4,
-      "category": "Chinese",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=44",
-        "https://picsum.photos/1000/1100?random=45"
-      ],
-      "reviews": [
-        {
-          "id": 57,
-          "name": "Olive Yellow",
-          "rating": 4.5,
-          "text": "Authentic flavors."
-        },
-        {
-          "id": 58,
-          "name": "Paul Black",
-          "rating": 4.3,
-          "text": "Great variety."
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "name": "French Cafe",
-      "rating": 4.6,
-      "category": "French",
-      "price": 30,
-      "open": false,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=46",
-        "https://picsum.photos/1000/1100?random=47"
-      ],
-      "reviews": [
-        {
-          "id": 59,
-          "name": "Quinn White",
-          "rating": 4.7,
-          "text": "Lovely pastries."
-        },
-        {
-          "id": 60,
-          "name": "Rita Green",
-          "rating": 4.5,
-          "text": "Great coffee."
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Greek Island",
-      "rating": 4.5,
-      "category": "Greek",
-      "price": 60,
-      "open": true,
-      "photos": [
-        "https://picsum.photos/1000/1100?random=48",
-        "https://picsum.photos/1000/1100?random=49"
-      ],
-      "reviews": [
-        {
-          "id": 61,
-          "name": "Sam Blue",
-          "rating": 4.6,
-          "text": "Delicious and fresh."
-        },
-        {
-          "id": 62,
-          "name": "Tina Red",
-          "rating": 4.4,
-          "text": "Great service."
+          "text": "Great atmosphere.",
+          "images": [
+            "https://picsum.photos/1000/1100?random=1",
+            "https://picsum.photos/1000/1100?random=2",
+            "https://picsum.photos/1000/1100?random=3"
+          ]
         }
       ]
     }

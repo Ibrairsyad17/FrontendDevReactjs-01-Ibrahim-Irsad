@@ -2,7 +2,8 @@ export interface Review {
   id: number;
   name: string;
   rating: number;
-  comment: string;
+  text: string;
+  images: string[];
 }
 
 export interface Restaurant {
