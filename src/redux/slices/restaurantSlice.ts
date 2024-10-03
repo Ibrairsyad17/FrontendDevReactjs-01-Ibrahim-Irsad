@@ -4,7 +4,7 @@ export interface RestaurantState {
   filters: {
     category: string;
     open: boolean;
-    price: string;
+    priceRange: [number, number];
   };
 }
 
@@ -12,7 +12,7 @@ const initialState: RestaurantState = {
   filters: {
     category: "",
     open: false,
-    price: "",
+    priceRange: [0, 100],
   },
 };
 
@@ -24,7 +24,7 @@ const restaurantSlice = createSlice({
       state,
       action: PayloadAction<{
         key: keyof RestaurantState["filters"];
-        value: string | boolean;
+        value: string | boolean | [number, number];
       }>
     ) => {
       state.filters[action.payload.key] = action.payload.value as never;

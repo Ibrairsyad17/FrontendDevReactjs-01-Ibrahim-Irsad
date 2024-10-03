@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import FilterTools from "./FilterTools";
 import RestaurantList from "./RestaurantList";

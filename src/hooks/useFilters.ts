@@ -12,7 +12,7 @@ const useFilters = () => {
 
   const updateFilter = (
     key: keyof RestaurantState["filters"],
-    value: string | boolean
+    value: string | boolean | [number, number]
   ) => {
     dispatch(setFilter({ key, value }));
   };

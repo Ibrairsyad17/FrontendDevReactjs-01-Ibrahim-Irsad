@@ -17,7 +17,7 @@ const RestaurantList = () => {
   const navigate = useNavigate();
 
   const filteredRestaurants = restaurants?.filter((restaurant) => {
-    const { open, category } = filters;
+    const { open, category, priceRange } = filters;
     let matches = true;
 
     if (open) {
@@ -28,16 +28,14 @@ const RestaurantList = () => {
       matches = matches && restaurant.category === category;
     }
 
-    return matches;
-  });
-
-  const sortedRestaurants = filteredRestaurants?.sort((a, b) => {
-    if (filters.price === "asc") {
-      return Number(a.price) - Number(b.price);
-    } else if (filters.price === "desc") {
-      return Number(b.price) - Number(a.price);
+    if (priceRange) {
+      matches =
+        matches &&
+        Number(restaurant.price) >= priceRange[0] &&
+        Number(restaurant.price) <= priceRange[1];
     }
-    return 0;
+
+    return matches;
   });
 
   return (
@@ -48,12 +46,12 @@ const RestaurantList = () => {
         <div className="text-center col-span-4 text-gray-500">Loading...</div>
       )}
       <ul className="grid lg:grid-cols-4 gap-x-6 gap-y-10">
-        {sortedRestaurants?.length === 0 && (
+        {filteredRestaurants?.length === 0 && (
           <li className="text-center col-span-4 text-gray-500">
             No restaurants found
           </li>
         )}
-        {sortedRestaurants?.map((restaurant) => (
+        {filteredRestaurants?.map((restaurant) => (
           <li key={restaurant.id}>
             <Link
               to={`/restaurants/${restaurant.id}`}

@@ -8,10 +8,18 @@ import {
   SelectValue,
 } from "../ui/select";
 import { useGetCategoriesQuery } from "@/services/client-api";
+import { useState } from "react";
+import PriceRangeSlider from "./PriceRangeSlider";
 
 const FilterTools = () => {
   const { data, error, isLoading } = useGetCategoriesQuery();
   const { filters, updateFilter, resetFilters } = useFilters();
+
+  const [isPriceDropdownOpen, setIsPriceDropdownOpen] = useState(false);
+
+  const handlePriceChange = (value: [number, number]) => {
+    updateFilter("priceRange", value);
+  };
 
   return (
     <div className="border-y py-4 flex flex-col gap-4 lg:flex-row justify-between lg:items-center">
@@ -30,18 +38,22 @@ const FilterTools = () => {
             Open Now
           </label>
         </div>
-        <Select
-          value={filters.price}
-          onValueChange={(value) => updateFilter("price", value)}
-        >
-          <SelectTrigger className="lg:w-[120px] w-full">
-            <SelectValue placeholder="Price" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="asc">Termurah</SelectItem>
-            <SelectItem value="desc">Termahal</SelectItem>
-          </SelectContent>
-        </Select>
+        <div className="relative">
+          <button
+            className="lg:w-[120px] w-full border-b rounded px-4 py-2.5 text-sm"
+            onClick={() => setIsPriceDropdownOpen(!isPriceDropdownOpen)}
+          >
+            Price
+          </button>
+          {isPriceDropdownOpen && (
+            <div className="absolute z-10 bg-white border rounded mt-2 p-4">
+              <PriceRangeSlider
+                value={filters.priceRange}
+                onChange={handlePriceChange}
+              />
+            </div>
+          )}
+        </div>
         <Select
           value={filters.category}
           onValueChange={(value) => updateFilter("category", value)}
