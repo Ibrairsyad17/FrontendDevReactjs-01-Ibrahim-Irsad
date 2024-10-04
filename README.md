@@ -2,37 +2,9 @@
 
 Ibrahim Irsad - Internship Program - Technical Test
 
-## Task
-
-### Page Structure
-
-- [x] Main
-
-  - [x] Filter navigation
-  - [x] Open now (client side filter)
-  - [x] Price (client side filter)
-  - [x] Categories/Cuisines (server side search filter)
-  - [x] Section
-    - [x] Restaurant item
-    - [x] Image (use first item in `photos`)
-    - [x] Cuisine / Categories (use first item in `categories`)
-    - [x] Rating
-    - [-] Price range
-    - [x] Open / Closed
-    - [x] Restaurant name
-    - [x] Learn more (navigate to Detail View)
-
-- [x] Detail View
-  - [x] Restaurant Name & Rating
-  - [-] Map (optional)
-  - [x]Section
-    - [x] Review item
-    - [x] Image
-    - [x] Name
-    - [x] Rating
-    - [x] Text
-
 ## How to run this project
+
+This project using NPM as a package manager. You can see other requirements to run this project in below
 
 ### Requirements
 
@@ -75,3 +47,39 @@ json-server --watch db.json --port <port>
 VITE_PUBLIC_URL=YOUR_PUBLIC
 VITE_DEV_URL=YOUR_JSON_SERVER_URL
 ```
+
+## Tasks
+
+### Page Structure
+
+- [x] Main
+
+  - [x] Filter navigation
+  - [x] Open now (client side filter)
+  - [x] Price (client side filter)
+  - [x] Categories/Cuisines (server side search filter)
+  - [x] Section
+    - [x] Restaurant item
+    - [x] Image (use first item in `photos`)
+    - [x] Cuisine / Categories (use first item in `categories`)
+    - [x] Rating
+    - [ ] Price Range
+    - [x] Open / Closed
+    - [x] Restaurant name
+    - [x] Learn more (navigate to Detail View)
+
+- [x] Detail View
+  - [x] Restaurant Name & Rating
+  - [ ] Map (Optional)
+  - [x] Section
+    - [x] Review item
+    - [x] Image
+    - [x] Name
+    - [x] Rating
+    - [x] Text
+
+### Additional
+- [x] Global state management using redux toolkit
+  - [x] Restaurants State
+  - [x] Filter restaurants state
+- [x] Data fetching using RTK Query 
