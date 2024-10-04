@@ -25,7 +25,7 @@ Ibrahim Irsad - Internship Program - Technical Test
 - [x] Detail View
   - [x] Restaurant Name & Rating
   - [ ] Map (Optional)
-  - [x]Section
+  - [x] Section
     - [x] Review item
     - [x] Image
     - [x] Name
