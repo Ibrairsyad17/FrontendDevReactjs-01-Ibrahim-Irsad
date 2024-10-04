@@ -127,7 +127,11 @@ const RestaurantList = () => {
           </li>
         ))}
       </ul>
-      <Button className="rounded-none bg-white hover:bg-blue-900 border border-blue-900 uppercase tracking-widest py-4 self-center text-blue-900 hover:text-white">
+      <Button
+        className={`rounded-none bg-white hover:bg-blue-900 border border-blue-900 uppercase tracking-widest py-4 self-center text-blue-900 hover:text-white 
+          ${filteredRestaurants?.length === 0 ? "hidden" : "inline-flex"}
+        `}
+      >
         Load More
       </Button>
     </div>
