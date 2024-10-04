@@ -17,14 +17,14 @@ Ibrahim Irsad - Internship Program - Technical Test
     - [x] Image (use first item in `photos`)
     - [x] Cuisine / Categories (use first item in `categories`)
     - [x] Rating
-    - [] Price range
+    - [-] Price range
     - [x] Open / Closed
     - [x] Restaurant name
     - [x] Learn more (navigate to Detail View)
 
 - [x] Detail View
   - [x] Restaurant Name & Rating
-  - [] Map (optional)
+  - [-] Map (optional)
   - [x]Section
     - [x] Review item
     - [x] Image
