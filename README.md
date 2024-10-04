@@ -4,6 +4,8 @@ Ibrahim Irsad - Internship Program - Technical Test
 
 ## How to run this project
 
+This project using NPM as a package manager. You can see other requirements to run this project in below
+
 ### Requirements
 
 - Node.js `v20.9.0` or higher
