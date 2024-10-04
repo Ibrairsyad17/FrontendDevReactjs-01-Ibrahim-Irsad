@@ -78,7 +78,7 @@ VITE_DEV_URL=YOUR_JSON_SERVER_URL
     - [x] Rating
     - [x] Text
 
-### Aditional
+### Additional
 - [x] Global state management using redux toolkit
   - [x] Restaurants State
   - [x] Filter restaurants state
