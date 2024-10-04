@@ -16,6 +16,11 @@ const RestaurantList = () => {
 
   const navigate = useNavigate();
 
+  const sumAllPrices = restaurants?.reduce(
+    (acc, restaurant) => acc + Number(restaurant.price),
+    0
+  );
+
   const filteredRestaurants = restaurants?.filter((restaurant) => {
     const { open, category, priceRange } = filters;
     let matches = true;
@@ -88,7 +93,9 @@ const RestaurantList = () => {
                   <div className="flex gap-2 items-center uppercase text-xs">
                     <span className="text-gray-900">{restaurant.category}</span>
                     <span className="text-gray-500">•</span>
-                    <span className="text-gray-500">${restaurant.price}</span>
+                    <span className="text-gray-500">
+                      ${restaurant.price} - ${sumAllPrices}
+                    </span>
                   </div>
                   <div className="flex gap-2 items-center text-xs">
                     {restaurant.open ? (
@@ -120,6 +127,9 @@ const RestaurantList = () => {
           </li>
         ))}
       </ul>
+      <Button className="rounded-none bg-white hover:bg-blue-900 border border-blue-900 uppercase tracking-widest py-4 self-center text-blue-900 hover:text-white">
+        Load More
+      </Button>
     </div>
   );
 };
